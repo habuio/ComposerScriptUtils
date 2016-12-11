@@ -1,6 +1,8 @@
 # ComposerScriptUtils
 Collection of simple scripts/micro-framework for writing your own Composer scripts
 
+[![Build Status](https://travis-ci.org/habuio/ComposerScriptUtils.svg?branch=master)](https://travis-ci.org/habuio/ComposerScriptUtils)
+
 Features include:
 
 * Configuration: composer.json easy script configuration management through 'extra' node.
