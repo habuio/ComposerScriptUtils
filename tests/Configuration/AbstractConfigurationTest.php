@@ -58,10 +58,11 @@ class AbstractConfigurationTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('extras.example.key1', $key);
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
     public function testRecursivelyBuildConfigurationDefaultsException()
     {
-        $this->expectException(\InvalidArgumentException::class);
-
         $conf = new EmptyConfiguration([]);
 
         $this->invokeMethod($conf, 'recursivelyBuildConfigurationDefaults', [
@@ -136,10 +137,11 @@ class AbstractConfigurationTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('default.value', $conf->get('example.default-value-key'));
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
     public function testGetWithMissingRequiredField()
     {
-        $this->expectException(\InvalidArgumentException::class);
-
         $conf = new ExampleConfiguration([
             'example' => [
 
@@ -149,10 +151,11 @@ class AbstractConfigurationTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('bla', $conf->get('example.required-key'));
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
     public function testGetWithUndefinedDefault()
     {
-        $this->expectException(\InvalidArgumentException::class);
-
         $conf = new ExampleConfiguration([
             'example' => [
 

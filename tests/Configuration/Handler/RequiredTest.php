@@ -16,28 +16,35 @@ class RequiredTest extends \PHPUnit_Framework_TestCase
         $this->handler = new Required();
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
     public function testRequiredNull()
     {
-        $this->expectException(\InvalidArgumentException::class);
         $this->handler->get(null);
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
     public function testRequiredFalse()
     {
-        $this->expectException(\InvalidArgumentException::class);
         $this->handler->get(false);
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
     public function testRequiredEmptyArr()
     {
-        $this->expectException(\InvalidArgumentException::class);
         $this->handler->get([]);
     }
 
+    /**
+     * @expectedException \InvalidArgumentException
+     */
     public function testKeyName()
     {
-        $this->expectException(\InvalidArgumentException::class);
-
         $this->handler->setKey('extras.example.bla');
         $this->handler->get(0);
 
