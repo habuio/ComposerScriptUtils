@@ -24,4 +24,3 @@ This bundle is under the BSD 3-clause license. Please check the LICENSE file for
 ## Reporting an issue or a feature request
 
 Issues and feature requests are tracked in the [Github issue tracker](https://github.com/habuio/ComposerScriptUtils/issues).
-
