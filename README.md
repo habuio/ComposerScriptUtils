@@ -1,7 +1,7 @@
 # ComposerScriptUtils
 Collection of simple scripts/micro-framework for writing your own Composer scripts
 
-[![Build Status](https://travis-ci.org/habuio/ComposerScriptUtils.svg?branch=master)](https://travis-ci.org/habuio/ComposerScriptUtils)
+[![Build Status](https://travis-ci.org/habuio/ComposerScriptUtils.svg?branch=master)](https://travis-ci.org/habuio/ComposerScriptUtils)[![Latest Unstable Version](https://poser.pugx.org/habu/composer-script-utils/v/unstable)](https://packagist.org/packages/habu/composer-script-utils)[![Latest Stable Version](https://poser.pugx.org/habu/composer-script-utils/v/stable)](https://packagist.org/packages/habu/composer-script-utils)[![License](https://poser.pugx.org/habu/composer-script-utils/license)](https://packagist.org/packages/habu/composer-script-utils)
 
 Features include:
 
