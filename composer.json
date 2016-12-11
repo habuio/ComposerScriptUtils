@@ -1,0 +1,41 @@
+{
+    "name": "habu/composer-script-utils",
+    "description": "Collection of simple scripts/micro-framework for writing your own Composer scripts",
+    "type": "library",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+            "name": "Ruben Knol",
+            "email": "c.minor6@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Habu\\ComposerScriptUtils\\": "lib"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Habu\\Tests\\ComposerScriptUtils\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit --coverage-text"
+        ],
+        "cs-fix": [
+            "./vendor/bin/php-cs-fixer fix"
+        ],
+        "cs-dry-run": [
+            "./vendor/bin/php-cs-fixer fix --dry-run --diff"
+        ]
+    },
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8|^5.7",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "composer/composer": "^1.1"
+    }
+}
