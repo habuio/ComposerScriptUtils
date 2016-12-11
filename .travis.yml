@@ -1,0 +1,18 @@
+language: php
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.5
+      env: CS_CHECK=1
+    - php: 5.6
+    - php: 7.0
+
+install:
+  - composer install
+  - if [ "$CS_CHECK" = 1 ]; then wget https://scrutinizer-ci.com/ocular.phar; fi;
+
+script:
+  - if [ "$CS_CHECK" = 1 ]; then composer cs-dry-run; fi;
+  - ./vendor/bin/phpunit --coverage-clover=./coverage.clover
+  - if [ "$CS_CHECK" = 1 ]; then php ocular.phar code-coverage:upload --format=php-clover ./coverage.clover; fi;
