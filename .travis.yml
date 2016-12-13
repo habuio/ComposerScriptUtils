@@ -15,4 +15,4 @@ install:
 script:
   - if [ "$CS_CHECK" = 1 ]; then composer cs-dry-run; fi;
   - ./vendor/bin/phpunit --coverage-clover=./coverage.clover
-  # - if [ "$CS_CHECK" = 1 ]; then php ocular.phar code-coverage:upload --format=php-clover ./coverage.clover; fi;
+  - if [ "$CS_CHECK" = 1 ]; then php ocular.phar code-coverage:upload --format=php-clover ./coverage.clover; fi;
