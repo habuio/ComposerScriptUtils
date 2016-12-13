@@ -23,4 +23,4 @@ checks:
 tools:
     external_code_coverage:
         timeout: 600
-runs: 1
+        runs: 1
