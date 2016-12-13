@@ -241,3 +241,9 @@ Examples
 This library ships with a few examples on how to structure your Composer commands with
 the help of this library. Consult the `Examples <examples.rst>`_ documentation page to find out
 which examples there are and what purpose they serve.
+
+Handlers
+--------
+
+This library ships with several configuration handlers. Check out the `Handlers <handlers.rst>`_
+chapter to see which ones there are and how they work.
