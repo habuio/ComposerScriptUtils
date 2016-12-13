@@ -58,7 +58,7 @@ abstract class AbstractConfiguration implements ConfigurationInterface
      *
      * @param string $key
      *
-     * @return array|ConfigurationHandlerInterface
+     * @return array
      */
     private function buildConfigurationDefaults($key)
     {
