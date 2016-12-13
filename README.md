@@ -25,6 +25,12 @@ Please check the [Getting Started](res/doc/index.rst) guide for advanced install
 
 The source of the documentation is stored within the `res/doc/` folder of this repository.
 
+## Examples
+
+This library ships with a few examples on how to structure your Composer commands with
+the help of this library. Consult the [Examples](res/doc/examples.rst) documentation page to find out
+which examples there are and what purpose they serve.
+
 ## License
 
 This bundle is under the BSD 3-clause license. Please check the LICENSE file for the complete license.

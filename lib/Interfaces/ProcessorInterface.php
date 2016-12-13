@@ -2,7 +2,6 @@
 
 namespace Habu\ComposerScriptUtils\Interfaces;
 
-use Composer\IO\IOInterface;
 use Composer\Script\Event;
 
 /**

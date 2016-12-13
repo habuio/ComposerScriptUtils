@@ -7,7 +7,5 @@ test.php
 # Examples
 res/examples/single-command/composer.lock
 res/examples/single-command/vendor
-res/examples/multi-command-one-processor/composer.lock
-res/examples/multi-command-one-processor/vendor
-res/examples/multi-command-multi-processor/composer.lock
-res/examples/multi-command-multi-processor/vendor
+res/examples/multi-command/composer.lock
+res/examples/multi-command/vendor

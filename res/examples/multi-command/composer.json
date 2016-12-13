@@ -15,11 +15,12 @@
     }
   },
   "require": {
-    "habu/composer-script-utils": "*"
+    "habu/composer-script-utils": "dev-master"
   },
   "scripts": {
     "example-commands": [
-      "Habu\\ComposerScriptExample\\ScriptHandler::helloExample"
+      "Habu\\ComposerScriptExample\\ScriptHandler::helloExample",
+      "Habu\\ComposerScriptExample\\ScriptHandler::genericExample"
     ],
     "post-install-cmd": [
       "@example-commands"

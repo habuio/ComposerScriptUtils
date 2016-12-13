@@ -11,6 +11,6 @@ class ScriptHandler
         $configuration = new Configuration($event->getComposer()->getPackage()->getExtra());
         $processor = new Processor($event->getIO(), $event->getComposer());
 
-        $processor->process($configuration);
+        $processor->process($configuration, $event);
     }
 }

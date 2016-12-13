@@ -1,16 +1,15 @@
 <?php
 
-namespace Habu\ComposerScriptExample;
+namespace Habu\ComposerScriptExample\Processor;
 
 use Composer\Script\Event;
 use Habu\ComposerScriptUtils\Interfaces\ConfigurationInterface;
 use Habu\ComposerScriptUtils\Processor\AbstractProcessor;
 
-class Processor extends AbstractProcessor
+class ExampleProcessor extends AbstractProcessor
 {
     public function process(ConfigurationInterface $configuration, Event $event)
     {
-        $this->getIO()->write($event->getName());
-        $this->getIO()->write(sprintf('Hello %s!', $configuration->get('habu-script-example.name')));
+        $this->getIO()->write(sprintf('This is an %s', $configuration->get('habu-script-example.example')));
     }
 }
