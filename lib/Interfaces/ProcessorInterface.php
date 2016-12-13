@@ -3,6 +3,7 @@
 namespace Habu\ComposerScriptUtils\Interfaces;
 
 use Composer\IO\IOInterface;
+use Composer\Script\Event;
 
 /**
  * Interface ProcessorInterface
@@ -15,7 +16,9 @@ interface ProcessorInterface
      * Run the processor.
      *
      * @param ConfigurationInterface $configuration
+     * @param Event $event
+     *
      * @return mixed
      */
-    public function process(ConfigurationInterface $configuration);
+    public function process(ConfigurationInterface $configuration, Event $event);
 }

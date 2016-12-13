@@ -13,7 +13,13 @@ See also the list of [contributors](https://github.com/habuio/ComposerScriptUtil
 
 ## Installation
 
-Please check the [Getting Started](res/doc/index.rst) guide for installation and configuration within your project.
+To install this library you can run the following Composer command:
+
+```
+$ composer require habu/composer-script-utils
+```
+
+Please check the [Getting Started](res/doc/index.rst) guide for advanced installation and configuration within your project.
 
 ## Documentation
 

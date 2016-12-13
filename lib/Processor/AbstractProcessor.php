@@ -4,6 +4,7 @@ namespace Habu\ComposerScriptUtils\Processor;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
+use Composer\Script\Event;
 use Habu\ComposerScriptUtils\Interfaces\ConfigurationInterface;
 use Habu\ComposerScriptUtils\Interfaces\ProcessorInterface;
 
@@ -50,5 +51,5 @@ abstract class AbstractProcessor implements ProcessorInterface
     /**
      * {@inheritdoc}
      */
-    abstract public function process(ConfigurationInterface $configuration);
+    abstract public function process(ConfigurationInterface $configuration, Event $event);
 }

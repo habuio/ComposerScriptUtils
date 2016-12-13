@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="./vendor/autoload.php" colors="true">
     <testsuites>
-        <testsuite name="ComposerScriptUtils test suite">
+        <testsuite name="ComposerScriptUtils Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
@@ -12,6 +12,7 @@
             <directory>./</directory>
             <exclude>
                 <directory>./tests</directory>
+                <directory>./res/examples</directory>
                 <directory>./vendor</directory>
             </exclude>
         </whitelist>
